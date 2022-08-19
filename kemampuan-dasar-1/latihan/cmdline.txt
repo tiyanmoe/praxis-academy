@@ -1,0 +1,919 @@
+Microsoft Windows [Version 10.0.19044.1865]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Titin>date
+The current date is: Fri 08/19/2022
+Enter the new date: (mm-dd-yy)
+
+C:\Users\Titin>time
+The current time is: 11:01:52.14
+Enter the new time:
+
+C:\Users\Titin>ver
+
+Microsoft Windows [Version 10.0.19044.1865]
+
+C:\Users\Titin>vol
+ Volume in drive C has no label.
+ Volume Serial Number is E8E8-0C7B
+
+C:\Users\Titin>color b
+
+C:\Users\Titin>hostname
+DESKTOP-FK255RB
+
+C:\Users\Titin>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+C:\Users\Titin>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+
+C:\Users\Titin>ping google.com
+
+Pinging google.com [74.125.200.139] with 32 bytes of data:
+Reply from 74.125.200.139: bytes=32 time=68ms TTL=107
+Reply from 74.125.200.139: bytes=32 time=76ms TTL=107
+Reply from 74.125.200.139: bytes=32 time=171ms TTL=107
+Reply from 74.125.200.139: bytes=32 time=64ms TTL=107
+
+Ping statistics for 74.125.200.139:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 64ms, Maximum = 171ms, Average = 94ms
+
+C:\Users\Titin>D:
+
+D:\>dir
+ Volume in drive D is TIYAN
+ Volume Serial Number is D8CD-E4B2
+
+ Directory of D:\
+
+08/17/2022  06:09 AM    <DIR>          !ON JOB
+08/17/2022  06:18 AM    <DIR>          APK
+06/20/2022  10:23 AM    <DIR>          DOKPRIV
+07/23/2022  08:21 PM    <DIR>          E-BOOK
+08/17/2022  06:09 AM    <DIR>          JASA KETIK
+07/07/2022  07:02 PM    <DIR>          KULIAH
+07/27/2022  05:35 PM    <DIR>          LAMARAN
+11/09/2021  02:30 PM    <DIR>          LOGO
+07/14/2022  08:16 PM    <DIR>          LOMBA
+07/14/2022  08:15 PM    <DIR>          ORGANISASI
+07/20/2022  12:40 AM    <DIR>          PELATIHAN
+06/21/2022  10:29 PM    <DIR>          PPPK
+08/18/2022  11:42 PM    <DIR>          PPQS
+07/20/2022  12:36 AM    <DIR>          PROGRAM SEKOLAH PENGGERAK
+08/19/2022  08:43 AM    <DIR>          QS
+07/19/2022  11:43 PM    <DIR>          SERTIFIKAT
+06/17/2019  10:27 PM    <DIR>          SMK
+08/04/2022  06:48 PM    <DIR>          TITIPAN
+               0 File(s)              0 bytes
+              18 Dir(s)  172,212,998,144 bytes free
+
+D:\>cd QS
+
+D:\QS>cd ..
+
+D:\>detail
+'detail' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\>C:
+
+C:\Users\Titin>detail
+'detail' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Titin>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0         32 K
+Registry                        92 Services                   0     32,172 K
+smss.exe                       348 Services                   0        628 K
+csrss.exe                      592 Services                   0      5,076 K
+wininit.exe                    700 Services                   0      6,180 K
+services.exe                   792 Services                   0      8,960 K
+lsass.exe                      800 Services                   0     18,256 K
+fontdrvhost.exe                940 Services                   0      2,072 K
+svchost.exe                    956 Services                   0     31,412 K
+svchost.exe                    512 Services                   0     14,804 K
+svchost.exe                    472 Services                   0      7,624 K
+svchost.exe                   1212 Services                   0      9,956 K
+svchost.exe                   1252 Services                   0     14,524 K
+svchost.exe                   1260 Services                   0     13,148 K
+svchost.exe                   1300 Services                   0      7,604 K
+svchost.exe                   1328 Services                   0      5,664 K
+svchost.exe                   1416 Services                   0     18,296 K
+svchost.exe                   1640 Services                   0     11,612 K
+atiesrxx.exe                  1648 Services                   0      5,148 K
+svchost.exe                   1692 Services                   0     14,244 K
+svchost.exe                   1700 Services                   0      5,336 K
+svchost.exe                   1708 Services                   0      6,600 K
+svchost.exe                   1716 Services                   0     10,104 K
+svchost.exe                   1724 Services                   0      9,728 K
+svchost.exe                   1732 Services                   0     14,604 K
+svchost.exe                   1740 Services                   0     11,264 K
+svchost.exe                   2000 Services                   0      6,276 K
+svchost.exe                   1552 Services                   0      7,480 K
+svchost.exe                   2064 Services                   0      6,536 K
+svchost.exe                   2108 Services                   0      7,088 K
+svchost.exe                   2120 Services                   0     10,216 K
+svchost.exe                   2128 Services                   0     75,196 K
+svchost.exe                   2140 Services                   0      7,260 K
+svchost.exe                   2160 Services                   0      5,136 K
+svchost.exe                   2240 Services                   0      7,856 K
+Memory Compression            2280 Services                   0    116,392 K
+svchost.exe                   2300 Services                   0      7,112 K
+svchost.exe                   2320 Services                   0      6,776 K
+svchost.exe                   2400 Services                   0     12,264 K
+svchost.exe                   2504 Services                   0      9,828 K
+svchost.exe                   2568 Services                   0     13,000 K
+svchost.exe                   2640 Services                   0      8,116 K
+svchost.exe                   2648 Services                   0      6,128 K
+svchost.exe                   2660 Services                   0      9,288 K
+svchost.exe                   2880 Services                   0     18,632 K
+svchost.exe                   2956 Services                   0     13,844 K
+spoolsv.exe                   3056 Services                   0     10,484 K
+svchost.exe                   2520 Services                   0     17,324 K
+svchost.exe                   2828 Services                   0      7,068 K
+AdminService.exe              3236 Services                   0      7,144 K
+svchost.exe                   3244 Services                   0     12,420 K
+svchost.exe                   3256 Services                   0     31,556 K
+svchost.exe                   3272 Services                   0     29,108 K
+ICEsoundService64.exe         3288 Services                   0      5,284 K
+svchost.exe                   3316 Services                   0     14,612 K
+svchost.exe                   3384 Services                   0      5,552 K
+svchost.exe                   3400 Services                   0      7,628 K
+svchost.exe                   3416 Services                   0      5,028 K
+svchost.exe                   3460 Services                   0     22,416 K
+OfficeClickToRun.exe          3476 Services                   0     45,264 K
+svchost.exe                   3512 Services                   0     10,340 K
+svchost.exe                   3524 Services                   0      8,100 K
+svchost.exe                   3604 Services                   0      4,636 K
+MsMpEng.exe                   3612 Services                   0    152,672 K
+svchost.exe                   3684 Services                   0     10,852 K
+svchost.exe                   4376 Services                   0      7,812 K
+dllhost.exe                   4808 Services                   0     10,364 K
+svchost.exe                   5116 Services                   0     18,948 K
+svchost.exe                   3448 Services                   0      7,276 K
+svchost.exe                   3156 Services                   0     19,244 K
+SearchIndexer.exe             6032 Services                   0     41,012 K
+NisSrv.exe                    6552 Services                   0     11,336 K
+SecurityHealthService.exe     6900 Services                   0     15,084 K
+svchost.exe                   7040 Services                   0      6,264 K
+svchost.exe                   2340 Services                   0      9,304 K
+dasHost.exe                   3332 Services                   0     12,068 K
+svchost.exe                   6448 Services                   0      7,272 K
+svchost.exe                   6464 Services                   0     18,904 K
+svchost.exe                   7640 Services                   0     10,096 K
+GoogleCrashHandler.exe        6124 Services                   0        220 K
+svchost.exe                   7284 Services                   0     17,184 K
+svchost.exe                   2420 Services                   0     10,876 K
+SgrmBroker.exe                8648 Services                   0      6,312 K
+GoogleCrashHandler64.exe      8688 Services                   0        232 K
+svchost.exe                   8968 Services                   0     21,420 K
+svchost.exe                   3672 Services                   0      9,216 K
+svchost.exe                   8712 Services                   0      6,144 K
+svchost.exe                   5396 Services                   0      5,568 K
+csrss.exe                     3716 Console                    3      9,556 K
+winlogon.exe                  4024 Console                    3     10,128 K
+fontdrvhost.exe               7480 Console                    3      5,424 K
+dwm.exe                       5904 Console                    3     70,428 K
+atieclxx.exe                  8500 Console                    3     10,736 K
+svchost.exe                    848 Services                   0      7,680 K
+svchost.exe                   5676 Console                    3     19,348 K
+sihost.exe                    5988 Console                    3     29,324 K
+svchost.exe                   7360 Console                    3     34,320 K
+taskhostw.exe                 1464 Console                    3     16,648 K
+explorer.exe                  7316 Console                    3    239,760 K
+svchost.exe                   4120 Console                    3     23,340 K
+StartMenuExperienceHost.e     8824 Console                    3     71,096 K
+RuntimeBroker.exe              760 Console                    3     26,536 K
+SearchApp.exe                 8156 Console                    3     98,668 K
+RuntimeBroker.exe             4544 Console                    3     47,076 K
+SkypeBackgroundHost.exe       2352 Console                    3     10,444 K
+RuntimeBroker.exe             5288 Console                    3     24,884 K
+ctfmon.exe                    6936 Console                    3     20,916 K
+SkypeApp.exe                  8644 Console                    3     34,412 K
+RuntimeBroker.exe             5168 Console                    3     10,856 K
+SecurityHealthSystray.exe     6608 Console                    3      9,296 K
+TextInputHost.exe             8832 Console                    3     40,776 K
+OneDrive.exe                  1036 Console                    3     66,192 K
+dllhost.exe                   3956 Console                    3     11,944 K
+svchost.exe                   4236 Console                    3     20,888 K
+Microsoft.Notes.exe           2764 Console                    3    107,228 K
+ApplicationFrameHost.exe      7580 Console                    3     33,872 K
+RuntimeBroker.exe             6548 Console                    3     30,416 K
+svchost.exe                   2816 Services                   0     19,484 K
+svchost.exe                   2152 Services                   0     20,012 K
+SearchApp.exe                 5644 Console                    3     59,108 K
+chrome.exe                    6932 Console                    3    154,952 K
+chrome.exe                    6456 Console                    3      7,628 K
+chrome.exe                    8992 Console                    3    134,224 K
+chrome.exe                    7784 Console                    3     40,860 K
+chrome.exe                    8076 Console                    3     18,344 K
+ShellExperienceHost.exe       4012 Console                    3     75,044 K
+RuntimeBroker.exe             7760 Console                    3     29,672 K
+chrome.exe                     724 Console                    3     82,628 K
+SystemSettings.exe            4892 Console                    3      2,184 K
+UserOOBEBroker.exe            5588 Console                    3      8,824 K
+chrome.exe                    5820 Console                    3     94,848 K
+HxCalendarAppImm.exe          4320 Console                    3      2,300 K
+RuntimeBroker.exe             8544 Console                    3      9,576 K
+HxTsr.exe                     5388 Console                    3      1,876 K
+vds.exe                       5024 Services                   0     11,696 K
+chrome.exe                    8744 Console                    3     85,732 K
+taskhostw.exe                 7396 Services                   0    600,300 K
+svchost.exe                   9732 Services                   0     37,300 K
+chrome.exe                     716 Console                    3     88,632 K
+chrome.exe                    9840 Console                    3     43,228 K
+chrome.exe                    7920 Console                    3     59,616 K
+chrome.exe                    2008 Console                    3     25,204 K
+chrome.exe                    8164 Console                    3     19,196 K
+svchost.exe                   9040 Services                   0      7,664 K
+svchost.exe                   6160 Services                   0      7,564 K
+svchost.exe                   2824 Services                   0      6,020 K
+taskhostw.exe                 2820 Console                    3      7,592 K
+smartscreen.exe               6508 Console                    3     23,820 K
+cmd.exe                       8116 Console                    3      4,724 K
+conhost.exe                   2528 Console                    3     20,300 K
+svchost.exe                   8388 Services                   0      6,800 K
+tasklist.exe                  7288 Console                    3      9,092 K
+WmiPrvSE.exe                   896 Services                   0      9,460 K
+
+C:\Users\Titin>tree
+Folder PATH listing
+Volume serial number is E8E8-0C7B
+C:.
+├───3D Objects
+├───Contacts
+├───Desktop
+├───Documents
+├───Downloads
+│   └───KMSAuto++.1.6.2.Nesabamedia
+├───Favorites
+│   └───Links
+├───Links
+├───Music
+├───OneDrive
+├───Pictures
+│   ├───Camera Roll
+│   ├───Saved Pictures
+│   └───Screenshots
+├───Saved Games
+├───Searches
+└───Videos
+
+C:\Users\Titin>assoc
+.001=WinRAR
+.386=vxdfile
+.3g2=WMP11.AssocFile.3G2
+.3gp=WMP11.AssocFile.3GP
+.3gp2=WMP11.AssocFile.3G2
+.3gpp=WMP11.AssocFile.3GP
+.7z=WinRAR
+.AAC=WMP11.AssocFile.ADTS
+.accda=Access.ACCDAExtension.16
+.accdb=Access.Application.16
+.accdc=Access.ACCDCFile.16
+.accde=Access.ACCDEFile.16
+.accdr=Access.ACCDRFile.16
+.accdt=Access.ACCDTFile.16
+.accdu=Access.WizardUserDataFile.16
+.accdw=Access.WebApplicationReference.16
+.accft=Access.ACCFTFile.16
+.accountpicture-ms=accountpicturefile
+.acl=ACLFile
+.ade=Access.ADEFile.16
+.adn=Access.BlankProjectTemplate.16
+.adp=Access.Project.16
+.ADT=WMP11.AssocFile.ADTS
+.ADTS=WMP11.AssocFile.ADTS
+.aif=WMP11.AssocFile.AIFF
+.aifc=WMP11.AssocFile.AIFF
+.aiff=WMP11.AssocFile.AIFF
+.ani=anifile
+.appcontent-ms=ApplicationContent
+.application=Application.Manifest
+.appref-ms=Application.Reference
+.arj=WinRAR
+.asa=aspfile
+.asd=Word.AutoRecovery.8
+.asf=WMP11.AssocFile.ASF
+.asp=aspfile
+.asx=WMP11.AssocFile.ASX
+.au=WMP11.AssocFile.AU
+.avi=WMP11.AssocFile.AVI
+.aw=AWFile
+.bat=batfile
+.blg=Diagnostic.Perfmon.Document
+.bmp=Paint.Picture
+.bz=WinRAR
+.bz2=WinRAR
+.cab=WinRAR
+.camp=campfile
+.cat=CATFile
+.cda=WMP11.AssocFile.CDA
+.cdmp=cdmpfile
+.cdx=aspfile
+.cdxml=Microsoft.PowerShellCmdletDefinitionXML.1
+.cer=CERFile
+.chk=chkfile
+.chm=chm.file
+.cmd=cmdfile
+.com=comfile
+.compositefont=Windows.CompositeFont
+.cpl=cplfile
+.crl=CRLFile
+.crt=CERFile
+.crtx=CRTXFile
+.css=CSSfile
+.csv=Excel.CSV
+.cur=curfile
+.db=dbfile
+.dctx=IMEDictionaryCompiler
+.dctxc=IMEDictionaryCompiler
+.dds=ddsfile
+.der=CERFile
+.desklink=CLSID\{9E56BE61-C50F-11CF-9A2C-00A0C90A90CE}
+.deskthemepack=desktopthemepackfile
+.det=Outlook.File.det.15
+.diagcab=Diagnostic.Cabinet
+.diagcfg=Diagnostic.Config
+.diagpkg=Diagnostic.Document
+.dib=Paint.Picture
+.dic=txtfile
+.dll=dllfile
+.doc=Word.Document.8
+.dochtml=wordhtmlfile
+.docm=Word.DocumentMacroEnabled.12
+.docmhtml=wordmhtmlfile
+.docx=Word.Document.12
+.docxml=wordxmlfile
+.dot=Word.Template.8
+.dothtml=wordhtmltemplate
+.dotm=Word.TemplateMacroEnabled.12
+.dotx=Word.Template.12
+.dqy=dqyfile
+.drv=drvfile
+.dsn=MSDASQL
+.elm=ELMFile
+.emf=emffile
+.eml=Outlook.File.eml.15
+.evt=evtfile
+.evtx=evtxfile
+.exc=txtfile
+.exe=exefile
+.fdf=FoxitReader.FDFDoc
+.fdm=Outlook.File.fdm.15
+.flac=WMP11.AssocFile.FLAC
+.fon=fonfile
+.gcsx=GCSXFile
+.gif=giffile
+.gitattributes=txtfile
+.gitignore=txtfile
+.gitmodules=txtfile
+.glox=GLOXFile
+.gmmp=gmmpfile
+.gqsx=GQSXFile
+.gra=MSGraph.Chart.8
+.grp=MSProgramGroup
+.gz=WinRAR
+.hlp=hlpfile
+.hol=Outlook.File.hol.15
+.hta=htafile
+.htm=htmlfile
+.html=htmlfile
+.hxa=MSHelp.hxa.2.5
+.hxc=MSHelp.hxc.2.5
+.hxd=MSHelp.hxd.2.5
+.hxe=MSHelp.hxe.2.5
+.hxf=MSHelp.hxf.2.5
+.hxh=MSHelp.hxh.2.5
+.hxi=MSHelp.hxi.2.5
+.hxk=MSHelp.hxk.2.5
+.hxq=MSHelp.hxq.2.5
+.hxr=MSHelp.hxr.2.5
+.hxs=MSHelp.hxs.2.5
+.hxt=MSHelp.hxt.2.5
+.hxv=MSHelp.hxv.2.5
+.hxw=MSHelp.hxa.2.5
+.icc=icmfile
+.icl=IconLibraryFile
+.icm=icmfile
+.ico=icofile
+.ics=Outlook.File.ics.15
+.imesx=imesxfile
+.img=Windows.IsoFile
+.inf=inffile
+.ini=inifile
+.iqy=iqyfile
+.iso=Windows.IsoFile
+.jfif=pjpegfile
+.Job=JobObject
+.jod=Microsoft.Jet.OLEDB.4.0
+.jpe=jpegfile
+.jpeg=jpegfile
+.jpg=jpegfile
+.js=JSFile
+.JSE=JSEFile
+.jxr=wdpfile
+.label=Label
+.laccdb=Access.LockFile.16
+.ldb=Access.LockFile.16
+.lex=LEXFile
+.lha=WinRAR
+.library-ms=LibraryFolder
+.lnk=lnkfile
+.log=txtfile
+.lz=WinRAR
+.lzh=WinRAR
+.m1v=WMP11.AssocFile.MPEG
+.M2T=WMP11.AssocFile.M2TS
+.M2TS=WMP11.AssocFile.M2TS
+.M2V=WMP11.AssocFile.MPEG
+.m3u=WMP11.AssocFile.m3u
+.m4a=WMP11.AssocFile.M4A
+.m4v=WMP11.AssocFile.MP4
+.mad=Access.Shortcut.Module.1
+.maf=Access.Shortcut.Form.1
+.mag=Access.Shortcut.Diagram.1
+.mam=Access.Shortcut.Macro.1
+.mapimail=CLSID\{9E56BE60-C50F-11CF-9A2C-00A0C90A90CE}
+.maq=Access.Shortcut.Query.1
+.mar=Access.Shortcut.Report.1
+.mas=Access.Shortcut.StoredProcedure.1
+.mat=Access.Shortcut.Table.1
+.mau=Access.Shortcut.Function.1
+.mav=Access.Shortcut.View.1
+.maw=Access.Shortcut.DataAccessPage.1
+.mda=Access.Extension.16
+.mdb=Access.MDBFile
+.mdbhtml=accesshtmlfile
+.mde=Access.MDEFile.16
+.mdn=Access.BlankDatabaseTemplate.16
+.mdt=Access.WizardDataFile.16
+.mdw=Access.Workgroup.16
+.mht=mhtmlfile
+.mhtml=mhtmlfile
+.mid=WMP11.AssocFile.MIDI
+.midi=WMP11.AssocFile.MIDI
+.mk3d=WMP11.AssocFile.MK3D
+.mka=WMP11.AssocFile.MKA
+.mkv=WMP11.AssocFile.MKV
+.mlc=LpkSetup.1
+.MOD=WMP11.AssocFile.MPEG
+.mov=WMP11.AssocFile.MOV
+.mp2=WMP11.AssocFile.MP3
+.mp2v=WMP11.AssocFile.MPEG
+.mp3=WMP11.AssocFile.MP3
+.mp4=WMP11.AssocFile.MP4
+.mp4v=WMP11.AssocFile.MP4
+.mpa=WMP11.AssocFile.MPEG
+.mpe=WMP11.AssocFile.MPEG
+.mpeg=WMP11.AssocFile.MPEG
+.mpg=WMP11.AssocFile.MPEG
+.mpv2=WMP11.AssocFile.MPEG
+.ms-windows-store-license=WindowsStore.License
+.msc=MSCFile
+.msg=Outlook.File.msg.15
+.msi=Msi.Package
+.msp=Msi.Patch
+.msrcincident=RemoteAssistance.1
+.msstyles=msstylesfile
+.msu=Microsoft.System.Update.1
+.MTS=WMP11.AssocFile.M2TS
+.mydocs=CLSID\{ECF03A32-103D-11d2-854D-006008059367}
+.nfo=MSInfoFile
+.nk2=Outlook.File.nk2.15
+.nst=Outlook.File.nst.15
+.ocx=ocxfile
+.odc=odcfile
+.odccubefile=odccubefile
+.odcdatabasefile=odcdatabasefile
+.odcnewfile=odcnewfile
+.odctablecollectionfile=odctablecollectionfile
+.odctablefile=odctablefile
+.odp=PowerPoint.OpenDocumentPresentation.12
+.ods=Excel.OpenDocumentSpreadsheet.12
+.odt=Word.OpenDocumentText.12
+.ofs=Outlook.File.ofs.15
+.oft=Outlook.File.oft.15
+.ols=OfficeListShortcut
+.one=OneNote.Section.1
+.onepkg=OneNote.Package
+.onetoc=OneNote.TableOfContents
+.onetoc2=OneNote.TableOfContents.12
+.opc=OPCFile
+.oqy=oqyfile
+.osdx=opensearchdescription
+.ost=Outlook.File.ost.15
+.otf=otffile
+.otm=Outlook.File.otm.15
+.p10=P10File
+.p12=PFXFile
+.p7b=SPCFile
+.p7c=certificate_wab_auto_file
+.p7m=P7MFile
+.p7r=P7RFile
+.p7s=P7SFile
+.pab=Outlook.File.pab.15
+.partial=IE.AssocFile.PARTIAL
+.pbk=pbkfile
+.pcb=PCBFile
+.perfmoncfg=Diagnostic.Perfmon.Config
+.pfm=pfmfile
+.pfx=PFXFile
+.pif=piffile
+.pko=PKOFile
+.pnf=pnffile
+.png=pngfile
+.pot=PowerPoint.Template.8
+.pothtml=powerpointhtmltemplate
+.potm=PowerPoint.TemplateMacroEnabled.12
+.potx=PowerPoint.Template.12
+.ppa=PowerPoint.Addin.8
+.ppam=PowerPoint.Addin.12
+.ppdf=FoxitReader.PPDF
+.ppkg=Microsoft.ProvTool.Provisioning.1
+.pps=PowerPoint.SlideShow.8
+.ppsm=PowerPoint.SlideShowMacroEnabled.12
+.ppsx=PowerPoint.SlideShow.12
+.ppt=PowerPoint.Show.8
+.ppthtml=powerpointhtmlfile
+.pptm=PowerPoint.ShowMacroEnabled.12
+.pptmhtml=powerpointmhtmlfile
+.pptx=PowerPoint.Show.12
+.pptxml=powerpointxmlfile
+.prf=prffile
+.ps1=Microsoft.PowerShellScript.1
+.ps1xml=Microsoft.PowerShellXMLData.1
+.psc1=Microsoft.PowerShellConsole.1
+.psd1=Microsoft.PowerShellData.1
+.psm1=Microsoft.PowerShellModule.1
+.pssc=Microsoft.PowerShellSessionConfiguration.1
+.pst=Outlook.File.pst.15
+.pub=Publisher.Document.16
+.pubhtml=publisherhtmlfile
+.pubmhtml=publishermhtmlfile
+.pwz=PowerPoint.Wizard.8
+.py=Python.File
+.pyc=Python.CompiledFile
+.pyd=Python.Extension
+.pyo=Python.CompiledFile
+.pyw=Python.NoConFile
+.pyz=Python.ArchiveFile
+.pyzw=Python.NoConArchiveFile
+.qds=SavedDsQuery
+.r00=WinRAR
+.r01=WinRAR
+.r02=WinRAR
+.r03=WinRAR
+.r04=WinRAR
+.r05=WinRAR
+.r06=WinRAR
+.r07=WinRAR
+.r08=WinRAR
+.r09=WinRAR
+.r10=WinRAR
+.r11=WinRAR
+.r12=WinRAR
+.r13=WinRAR
+.r14=WinRAR
+.r15=WinRAR
+.r16=WinRAR
+.r17=WinRAR
+.r18=WinRAR
+.r19=WinRAR
+.r20=WinRAR
+.r21=WinRAR
+.r22=WinRAR
+.r23=WinRAR
+.r24=WinRAR
+.r25=WinRAR
+.r26=WinRAR
+.r27=WinRAR
+.r28=WinRAR
+.r29=WinRAR
+.rar=WinRAR
+.rat=ratfile
+.RDP=RDP.File
+.reg=regfile
+.rels=xmlfile
+.resmoncfg=Diagnostic.Resmon.Config
+.rev=WinRAR.REV
+.rle=rlefile
+.rll=dllfile
+.rmi=WMP11.AssocFile.MIDI
+.rqy=rqyfile
+.rtf=Word.RTF.8
+.sav=SPSS.DataDocument
+.sbs=SPSS.SaxBasicDocument
+.scf=SHCmdFile
+.scp=txtfile
+.scr=scrfile
+.sct=scriptletfile
+.search-ms=SearchFolder
+.searchConnector-ms=SearchConnectorFolder
+.settingcontent-ms=SettingContent
+.sfcache=RDBFileProperties.1
+.sh=sh_auto_file
+.sldm=PowerPoint.SlideMacroEnabled.12
+.sldx=PowerPoint.Slide.12
+.slk=Excel.SLK
+.snd=WMP11.AssocFile.AU
+.spc=SPCFile
+.spd=SPSS.UIBuilderDocument
+.spe=SPSS.ExtBundle
+.spj=SPSS.ProductionDocument
+.spq=SPSS.DBQueryDocument
+.sps=SPSS.SyntaxDocument
+.spsx=SPSS.PPDocument
+.spv=SPSS.OutputDocument
+.sst=CertificateStoreFile
+.svg=svgfile
+.symlink=.symlink
+.sys=sysfile
+.tar=WinRAR
+.taz=WinRAR
+.tbz=WinRAR
+.tbz2=WinRAR
+.tgz=WinRAR
+.theme=themefile
+.themepack=themepackfile
+.thmx=OfficeTheme.12
+.tif=TIFImage.Document
+.tiff=TIFImage.Document
+.tlz=WinRAR
+.TS=WMP11.AssocFile.TTS
+.ttc=ttcfile
+.ttf=ttffile
+.TTS=WMP11.AssocFile.TTS
+.txt=txtfile
+.txz=WinRAR
+.tzst=WinRAR
+.UDL=MSDASC
+.URL=InternetShortcut
+.uu=WinRAR
+.uue=WinRAR
+.uxdc=UXDCFILE
+.VBE=VBEFile
+.vbs=VBSFile
+.vcf=Outlook.File.vcf.15
+.vcs=Outlook.File.vcs.15
+.vdw=VisioViewer.Viewer
+.vdx=VisioViewer.Viewer
+.vhd=Windows.VhdFile
+.vhdpmem=Windows.VhdPmemFile
+.vhdx=Windows.VhdFile
+.vsd=VisioViewer.Viewer
+.vsdm=VisioViewer.Viewer
+.vsdx=VisioViewer.Viewer
+.vss=VisioViewer.Viewer
+.vssm=VisioViewer.Viewer
+.vssx=VisioViewer.Viewer
+.vst=VisioViewer.Viewer
+.vstm=VisioViewer.Viewer
+.vsto=bootstrap.vsto.1
+.vstx=VisioViewer.Viewer
+.vsx=VisioViewer.Viewer
+.vtx=VisioViewer.Viewer
+.vxd=vxdfile
+.wab=wab_auto_file
+.wav=WMP11.AssocFile.WAV
+.wax=WMP11.AssocFile.WAX
+.wbcat=wbcatfile
+.wbk=Word.Backup.8
+.wcx=wcxfile
+.wdp=wdpfile
+.webpnp=webpnpFile
+.website=Microsoft.Website
+.wiz=Word.Wizard.8
+.wizhtml=accessthmltemplate
+.wll=Word.Addin.8
+.wm=WMP11.AssocFile.ASF
+.wma=WMP11.AssocFile.WMA
+.WMD=WMP11.AssocFile.WMD
+.wmdb=WMP.WMDBFile
+.wmf=wmffile
+.WMS=WMP11.AssocFile.WMS
+.wmv=WMP11.AssocFile.WMV
+.wmx=WMP11.AssocFile.ASX
+.wmz=WMP11.AssocFile.WMZ
+.wpl=WMP11.AssocFile.WPL
+.wsc=scriptletfile
+.WSF=WSFFile
+.WSH=WSHFile
+.wtx=txtfile
+.wvx=WMP11.AssocFile.WVX
+.wwd=SPSS.WinWrapBasicDocument
+.xaml=Windows.XamlDocument
+.xbap=Windows.Xbap
+.xdp=FoxitReader.XDPDoc
+.xevgenxml=XEV.GenericApp
+.xfdf=FoxitReader.XFDFDoc
+.xht=xhtmlfile
+.xhtml=xhtmlfile
+.xla=Excel.Addin
+.xlam=Excel.AddInMacroEnabled
+.xld=Excel.Dialog
+.xlk=Excel.Backup
+.xll=Excel.XLL
+.xlm=Excel.Macrosheet
+.xls=Excel.Sheet.8
+.xlsb=Excel.SheetBinaryMacroEnabled.12
+.xlshtml=Excelhtmlfile
+.xlsm=Excel.SheetMacroEnabled.12
+.xlsmhtml=excelmhtmlfile
+.xlsx=Excel.Sheet.12
+.xlt=Excel.Template.8
+.xlthtml=Excelhtmltemplate
+.xltm=Excel.TemplateMacroEnabled
+.xltx=Excel.Template
+.xlw=Excel.Workspace
+.xlxml=Excelxmlss
+.xml=xmlfile
+.xrm-ms=MSSppLicenseFile
+.xsl=xslfile
+.xxe=WinRAR
+.xz=WinRAR
+.z=WinRAR
+.ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}
+.zip=WinRAR.ZIP
+.zipx=WinRAR
+.zsav=SPSS.DataFile
+.zst=WinRAR
+
+C:\Users\Titin>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::7145:e63d:ee4:698%8
+   IPv4 Address. . . . . . . . . . . : 192.168.43.191
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.43.210
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Users\Titin>verify
+VERIFY is off.
+
+C:\Users\Titin>verify on
+
+C:\Users\Titin>verify
+VERIFY is on.
+
+C:\Users\Titin>
