@@ -1,0 +1,1 @@
+﻿Write-Host "Hello, Guru99 Bintang Songo"
