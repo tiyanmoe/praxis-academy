@@ -1,0 +1,74 @@
+Microsoft Windows [Version 10.0.19044.1865]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Titin>python
+Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> squares = [1, 4, 9, 16, 25]
+>>> squaress
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'squaress' is not defined. Did you mean: 'squares'?
+>>> squares
+[1, 4, 9, 16, 25]
+>>>
+>>> squares[0] # indexing returns the item
+1
+>>> squares[-1]
+25
+>>> squares[-3:] #slicing returns a new list
+[9, 16, 25]
+>>>
+>>> squares[:]
+[1, 4, 9, 16, 25]
+>>>
+>>> squares + [36, 49, 64, 81, 100]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>>
+>>> cubes = [1, 8, 27, 65, 125] # something's wrong here
+>>> 4 ** # the cube of 4 is 64, not 65!
+  File "<stdin>", line 1
+    4 ** # the cube of 4 is 64, not 65!
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+>>> 4 ** 3 # the cube of 4 is 64, not 65!
+64
+>>> cubes[3] = 64 # replace the wrong value
+>>> cubes
+[1, 8, 27, 64, 125]
+>>>
+>>> cubes.append(216) # add the cube of 6
+>>> cubes.append(7 ** 3) # and the cube of 7
+>>> cubes
+[1, 8, 27, 64, 125, 216, 343]
+>>>
+>>> letters = ['a', 'b', 'c', 'd', 'e', 'f' 'g']
+>>> letters
+['a', 'b', 'c', 'd', 'e', 'fg']
+>>> # replace some values
+>>> letters[2:5] = ['C', 'D', 'E']
+>>> letters
+['a', 'b', 'C', 'D', 'E', 'fg']
+>>> # now remove them
+>>> letters[2:5] = []
+>>> letters
+['a', 'b', 'fg']
+>>> # clear the list by replacing all the elements with an empty list
+>>> letters[:] = []
+>>> letters
+[]
+>>>
+>>> letters = ['a', 'b', 'c', 'd']
+>>> len(letters)
+4
+>>>
+>>> a = ['a', 'b', 'c']
+>>> n = [1, 2, 3]
+>>> x = [a, n]
+>>> x
+[['a', 'b', 'c'], [1, 2, 3]]
+>>> x[0]
+['a', 'b', 'c']
+>>> x[0][1]
+'b'
+>>>
