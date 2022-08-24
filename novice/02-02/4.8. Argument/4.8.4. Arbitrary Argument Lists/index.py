@@ -4,5 +4,5 @@ def write_multiple_items(file, separator, *args):
 def concat(*args, sep="/"):
     return sep.join(args)
 
-concat("earth", "mars", "venus")
-concat("earth", "mars", "venus", sep=".")
+print(concat("earth", "mars", "venus"))
+print(concat("earth", "mars", "venus", sep="."))

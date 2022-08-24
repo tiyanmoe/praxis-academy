@@ -27,4 +27,4 @@ def fib2(n): #return Fibonacci series up to n
 
 f100 = fib2(100) # call it
 f100 # write the result
-print(fib2(100))
+print(fib2(1500))

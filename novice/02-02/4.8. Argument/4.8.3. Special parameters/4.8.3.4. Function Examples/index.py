@@ -1,17 +1,39 @@
 def standard_arg(arg):
     print(arg)
+
 def pos_only_arg(arg, /):
     print(arg)
+
 def kwd_only_arg(*, arg):
     print(arg)
+
 def combined_example(pos_only, /, standard, *, kwd_only):
     print(pos_only, standard, kwd_only)
+
+standard_arg(2)
+standard_arg(arg=2)
+
+pos_only_arg(7)
+# pos_only_arg(arg=5) --- ini error
+
+# kwd_only_arg(3) --- ini error
+kwd_only_arg(arg=3)
+
+# combined_example(1, 2,3) --- ini error
+combined_example(1, 2, kwd_only=3)
+combined_example(1, standard=2, kwd_only=5)
+# combined_example(pos_only=1, standard=2, kwd_only=3) --- ini error
 
 
 def foo(name, **kwds):
     return 'name' in kwds
 
+# foo(1, **{'name': 2}) --- ini sintak error
+
 def foo(name, /, **kwds):
     return 'name' in kwds
->>> foo(1, **{'name': 2})
+
+foo(1, **{'name': 2})
 True
+
+print(foo(1, **{'name': 2}))
