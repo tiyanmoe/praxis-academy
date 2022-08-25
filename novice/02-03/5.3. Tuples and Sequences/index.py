@@ -1,25 +1,23 @@
 t = 12345, 54321, 'hello!'
-t[0]
-
-t
+print(t[0])
+print(t)
 
 # Tuples may be nested:
-    u = t, (1, 2, 3, 4, 5)
-u
+u = t, (1, 2, 3, 4, 5)
+print(u)
 
 # Tuples are immutable:
-    t[0] = 88888
+    # print(t[0] = 88888) --- sintak error
 
 # but they can contain mutable objects:
 v = ([1, 2, 3], [3, 2, 1])
-v
+print(v)
+
 
 empty = ()
 singleton = 'hello',    # <-- note trailing comma
-len(empty)
+print(len(empty))
+print(len(singleton))
+print(singleton)
 
-len(singleton)
-
-singleton
-
-x, y, z = t
+# x, y, z = t
