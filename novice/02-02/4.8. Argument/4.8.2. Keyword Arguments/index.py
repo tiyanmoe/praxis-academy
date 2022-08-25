@@ -6,11 +6,11 @@ def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
 
 parrot(1000)                                          # 1 positional argument
 parrot(voltage=1000)                                  # 1 keyword argument
-parrot(voltage=10000, action='VOOOOOM')                   # 2 keyword arguments
+parrot(voltage=10000, action='VOOOOOM')               # 2 keyword arguments
 parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
 parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
 parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
-parrot(1000)                     # required argument missing
+parrot(1000)                                           # required argument missing
 parrot(5.0, 'dead')  # non-keyword argument after a keyword argument
 # parrot(110, voltage=220)     # duplicate value for the same argument --- sintak error karena duplikat value
 # parrot(actor='John Cleese')  # unknown keyword argument --- sintak error, karena tidak terdeteksi di define

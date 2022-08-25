@@ -46,39 +46,39 @@ def where_is(point):
             print("Somewhere else")
         case _:
             print("Not a point")
-
 where_is(Point(0,6))
 
-# match points:
-#     case []:
-#         print("No points")
-#     case [Point(0, 0)]:
-#         print("The origin")
-#     case [Point(x, y)]:
-#         print(f"Single point {x}, {y}")
-#     case [Point(0, y1), Point(0, y2)]:
-#         print(f"Two on the Y axis at {y1}, {y2}")
-#     case _:
-#         print("Something else")
+match point:
+    case Point(x, y) if x == y:
+        print(f"Y=X at {x}")
+    case Point(x, y):
+        print(f"Not on the diagonal")
 
-# match point:
-#     case Point(x, y) if x == y:
-#         print(f"Y=X at {x}")
-#     case Point(x, y):
-#         print(f"Not on the diagonal")
+from enum import Enum
+class Color(Enum):
+    RED = 'red'
+    GREEN = 'green'
+    BLUE = 'blue'
 
-# from enum import Enum
-# class Color(Enum):
-#     RED = 'red'
-#     GREEN = 'green'
-#     BLUE = 'blue'
+color = Color(input("Enter your choice of 'red', 'blue' or 'green': "))
+def http_color(color)
+    match color:
+        case Color.RED:
+            print("I see red!")
+        case Color.GREEN:
+            print("Grass is green")
+        case Color.BLUE:
+            print("I'm feeling the blues :(")
+http_color(color(RED))
 
-# color = Color(input("Enter your choice of 'red', 'blue' or 'green': "))
-
-# match color:
-#     case Color.RED:
-#         print("I see red!")
-#     case Color.GREEN:
-#         print("Grass is green")
-#     case Color.BLUE:
-#         print("I'm feeling the blues :(")
+# def whereis(points):
+#     match points:
+#         case [Point(0, 0)]:
+#             print("The origin")
+#         case [Point(x, y)]:
+#             print(f"Single point {x}, {y}")
+#         case [Point(0, y1), Point(0, y2)]:
+#             print(f"Two on the Y axis at {y1}, {y2}")
+#         case _:
+#             print("Something else")
+# whereis(points(0,6))
