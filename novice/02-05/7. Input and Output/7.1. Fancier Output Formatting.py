@@ -1,6 +1,6 @@
 year = 2016
-event = 'Kelulusan SMK dari Tiyanmoe'
-print(f'Result of the {year} {event}')
+event = 'merupakan kelulusan SMK dari Tiyanmoe'
+print(f'Pada tahun {year} {event}')
 
 yes_votes = 42_572_654
 no_votes = 43_132_495
@@ -14,12 +14,12 @@ print(str(1/7))
 
 x = 10 * 3.25
 y = 200 * 200
-s = 'The value of x is ' +repr(x) + ', and y is ' +repr(y) + '...'
+s = 'Nilai dari X adalah ' +repr(x) + ', dan Y adalah ' +repr(y) + '...'
 print(s)
 # the argument to repr() may be any Python object
-print(repr((x, y, ('spam', 'eggs'))))
+print(repr((x, y, ('nyampah', 'terosss'))))
 
 # The repr() of a string adds string quotes and backslashes:
-hello = 'hello, world\n'
+hello = 'hello, btch\n'
 hellos = repr(hello)
 print(hellos)

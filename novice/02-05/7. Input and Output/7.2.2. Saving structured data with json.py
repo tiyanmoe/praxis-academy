@@ -1,6 +1,14 @@
+(
+        
+)
+
 import json
 x = [1, 'simple', 'list']
-json.dumps(x)
+print(json.dumps(x))
 
-json.dump(x, f)
-x = json.load(f)
+
+
+# sintak ini masih error
+# json.dump(x, f)
+# x = json.load(f)
+# print(json.load(f))
