@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGAJI QORYATUSSALAM</title>
+    <style>
+        table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+
+<body>
+    <div>
+    <h1>Mengaji di PP. Qoryatussalam</h1>
+    <form action="" method="post">
+        <label for="">tanggal</label>
+        <input for="tanggal" type="date" required>
+        <label>nama</label>
+        <input name="nama" type="text" required>
+        <label for="">judul</label>
+        <input name="judul" type="text" required>
+        <label for="">detail</label>
+        <input name="detail" type="text" required>
+        <button type="submit">kirim</button>
+    </form>
+
+    <hr>
+    <h1>Hasil Ngaji</h1>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>tanggal</th>
+            <th>nama</th>
+            <th>judul</th>
+            <th>detail</th>
+        </tr>
+        {% for d in context %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{d[1]}}</td>
+            <td>{{d[2]}}</td>
+            <td>{{d[3]}}</td>
+            <td>{{d[4]}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </div>
+    </body>
+    </html>
