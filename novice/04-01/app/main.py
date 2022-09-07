@@ -23,7 +23,7 @@ def index():
         conn.commit()
 
     print(request.method)
-    query = f"select * from buah"
+    query = f"select * from buah order by id desc"
     curs.execute(query)
     data = curs.fetchall()
     curs.close()
@@ -64,6 +64,32 @@ def delete(buah_id):
     conn.close()
     return redirect("/")
 
+@app.route("/update/<buah_id>", methods=["GET", "POST"])
+def update(buah_id):
+    conn = psycopg2.connect(
+        host="localhost",
+        database="exqs",
+        user="postgres",
+        password="tiyanmoe")
+    
+    curs = conn.cursor()
+    if request.method == "POST":
+        nama = request.form.get("nama")
+        detail = request.form.get("detail")
+        query = f"update buah set nama = '{nama}', detail = '{detail}' where id = {buah_id}"
+        curs.execute(query)
+        conn.commit()
+        return redirect("/")
+    
+    query = f"select * from buah where id = {buah_id}"
+    curs.execute(query)
+    data = curs.fetchone()
+    # conn.commit()
+    curs.close()
+    conn.close()
+    # print("data masuk")
+    return render_template("update.html", context=data)
+
 if __name__ == "__main__":
     app.run()
 
@@ -73,3 +99,7 @@ if __name__ == "__main__":
         # print(request.form["nama"])
         # print(request.form["detail"])
         # print(20*"=")
+
+    # namaLama = 'i told u'
+    # namaBaru = 'baekiii'
+    # detailBaru = 'kiyopta'
