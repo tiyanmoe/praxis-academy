@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALAMAN DETAIL HASIL NGAOS PPPQS</title>
+    <style>
+        table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+    <h2>
+        <a href="/">BERANDA UTAMA</a>
+    </h2>
+    <table>
+        <tr>
+            <th>tanggal</th>
+            <td>{{context[1]}}</td>
+        </tr>
+        <tr>
+            <th>nama</th>
+            <td>{{context[2]}}</td>
+        </tr>
+        <tr>
+            <th>judul</th>
+            <td>{{context[3]}}</td>
+        </tr> 
+        <tr>
+            <th>detail</th>
+            <td>{{context[4]}}</td>
+        </tr>   
+        </table>
+</body>
+</html>
