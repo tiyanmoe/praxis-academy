@@ -4,19 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UPDATING</title>
+    <style>
+        table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 </head>
 <body>
-    <h1>Halaman Update</h1>
-    <form action="" method="post">
+    <!--
+    <h1>Halaman Update Ngaji</h1>
+    
         <label for="">tanggal</label>
-        <input for="tanggal" name="tanggal" type="date" required>
+        <input value="{{context[1]}}" for="tanggal" name="tanggal" type="date" required>
         <label for="">nama</label>
-        <input name="nama" type="text" required>
+        <input value="{{context[2]}}" name="nama" type="text" required>
         <label for="">judul</label>
-        <input name="judul" type="text" required>
+        <input value="{{context[3]}}" name="judul" type="text" required>
         <label for="">detail</label>
-        <input textarea name="detail" type="text" required></textarea>
+        <textarea value="{{context[4]}}" name="detail" type="text" required>{{context[4]}}</textarea>
+        <button type="submit">update</button>
+    </form>
+    -->
+
+    <h2>
+    HALAMAN UPDATING
+    </h2>
+    <table>
+        <form action="" method="post">
+        <tr>
+            <th>tanggal</th>
+            <td><input value="{{context[1]}}" name="tanggal" type="date" required></td>
+        </tr>
+        <tr>
+            <th>nama</th>
+            <td><input value="{{context[2]}}" name="nama" type="text" required></td>
+        </tr>
+        <tr>
+            <th>judul</th>
+            <td><input value="{{context[3]}}" name="judul" type="text" required></td>
+        </tr> 
+        <tr>
+            <th>detail</th>
+            <td><textarea value="{{context[4]}}" name="detail" type="text" required style="resize:none;width:500px;height:250px;">{{context[4]}}</textarea></td>
+        </tr>   
+        </table>
         <button type="submit">update</button>
     </form>
 </body>
